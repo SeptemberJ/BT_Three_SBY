@@ -8,8 +8,8 @@ Vue.use(Vuex)
 const store = new Vuex.Store({
   state: {
     isMobile:false,
-    activeRoute:'首页',
-    CurSiderMenu:'首页',
+    activeRoute:'HER云平台',
+    CurSiderMenu:'HER云平台',
     open:false,
     docked: true,
     userInfo:{},
@@ -20,6 +20,7 @@ const store = new Vuex.Store({
   mutations:{
     [types.ROUTE_CHANGE](state,data){
       state.activeRoute = data.activeRoute
+      state.CurSiderMenu = data.activeRoute
     },
     
   },

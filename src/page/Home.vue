@@ -3,27 +3,29 @@
     <img style="width: 100%;" src="http://buy.sbyun.com/skins2/images/BANNER-4.jpg">
 
     <div class="TextCenter OneBlock">
-      <Row type="flex" justify="space-around" class="code-row-bg">
-        <Col :xs="24" :sm="8" :md="6" :lg="6">
+      <Row type="flex" justify="space-around" class="code-row-bg PaddingLR_20" :gutter="16">
+        <Col :xs="24" :sm="12" :md="{span: 6, offset: 3}" :lg="{span: 6, offset: 3}" class="TextCenter marginB_20">
           <Card class="IndividualCard">
             <p slot="title" style="text-align: left;color: #fff;">
                 <Icon type="android-contact"></Icon>
                 个人缴纳社保<span style="font-size: 6px;margin-left: 10px;">服务费</span>
             </p>
             <h5 class="marginTB_10"><span class="BigSize">¥40</span>/人.月</h5>
-            <Button class="marginTB_10" type="warning">立即参保</Button>
+            <Button class="marginTB_10" type="warning" @click="ToSBY(0)">立即参保</Button>
           </Card>
         </Col>
-        <Col :xs="24" :sm="8" :md="6" :lg="6">
+
+        <Col :xs="24" :sm="12" :md="{span: 6, offset: 3}" :lg="{span: 6, offset: 3}" class="TextCenter">
           <Card class="EnterpriseCard">
             <p slot="title" style="text-align: left;color: #fff;">
                 <Icon type="android-contacts"></Icon>
                 企业缴纳社保<span style="font-size: 6px;margin-left: 10px;">按员工数收费</span>
             </p>
             <h5 class="marginTB_10"><span class="BigSize">¥20</span>/人.月</h5>
-            <Button class="marginTB_10" type="warning">立即参保</Button>
+            <Button class="marginTB_10" type="warning" @click="ToSBY(1)">立即参保</Button>
           </Card>
         </Col>
+        <div style="clear: both;"></div>
       </Row>
     </div>
 
@@ -34,6 +36,7 @@
           <h5 class="ColorGreen">{{Block.title_s}}</h5>
           <p class="marginTB_10"><Icon :type="Block.icon"></Icon>{{Block.content}}</p>
         </Col>
+        <div style="clear: both;"></div>
       </Row>
     </div>
 
@@ -44,8 +47,9 @@
           <img style="width: 50px;" :src="Reason.img">
           <h5 class="marginTB_10">{{Reason.title}}</h5>
         </Col>
+        <div style="clear: both;"></div>
       </Row>
-      <h5 class="marginTB_20"><Icon type="chatboxes" style="margin-right: 5px;"></Icon>有更多原因需要缴纳社保，我们帮您解决>></h5>
+      <h5 class="marginTB_20"><Icon type="chatboxes" style="margin-right: 5px;"></Icon>有更多原因需要缴纳社保，我们帮您解决</h5>
     </div>
 
     <div class="TextCenter OneBlock">
@@ -55,6 +59,7 @@
           <img style="width: 50px;" :src="Process.img">
           <h5 class="marginTB_10">{{Process.title}}</h5>
         </Col>
+        <div style="clear: both;"></div>
       </Row>
     </div>
     
@@ -120,6 +125,20 @@
     methods: {
       ChangeTab_Product(Menu){
         this.Cur_Product = Menu
+      },
+      ToSBY(Kind){
+        switch(Kind){
+          case 0:
+          window.open('http://220.248.107.62:8089/ztnetsby/#/Individual')
+          break
+          case 1:
+          window.open('http://220.248.107.62:8089/ztnetsby/#/Enterprise')
+          break
+          default:
+          window.open('http://220.248.107.62:8089/ztnetsby')
+
+        }
+        
       }
      
 

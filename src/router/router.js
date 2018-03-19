@@ -39,7 +39,7 @@ router.beforeEach((to, from, next) => {
         }
         else {
             next({
-                path: '/Login',
+                path: '/',
             })
         }
     }
@@ -54,6 +54,7 @@ router.afterEach((to, from, next) => {
   Store.state.isMobile=!ISMobile;
   document.title = to.name;
   Store.commit('ROUTE_CHANGE',{activeRoute: to.name})
+  
   // console.log(window.history)
   // window.history.pushState({},to.name,location.href)
   // window.history.replaceState({}, document.title, this.landingPage)
