@@ -5,11 +5,13 @@
                 <span class="CursorPointer" @click="ToggleSider()"><Icon  style="margin-top: 10px;margin-left: 10px;" size="36" color="#fff" type="navicon"></Icon></span>
             </Col>
             <Col v-if='open' class="desktop TextRight  LineHeight" span="20">
-                <Button type="text" style="color: #fff;">Hox云平台登入</Button>
+                <Button type="text" style="color: #fff;">SaaS云平台登入</Button>
+                <Button type="text" style="color: #fff;">Store</Button>
                 <Button type="text" style="color: #fff;margin-right: 150px;">400 880 2248</Button>
             </Col>
             <Col v-if="!open" class="desktop  TextRight  LineHeight" span="20">
-                <Button type="text" style="color: #fff;">Hox云平台登入</Button>
+                <Button type="text" style="color: #fff;">SaaS云平台登入</Button>
+                <Button type="text" style="color: #fff;">Store</Button>
                 <Button type="text" style="color: #fff;">400 880 2248</Button>
             </Col>
 
@@ -19,7 +21,7 @@
                         <Icon class="Transform_R_90" size="30" color="#fff" type="more"></Icon>
                     </a>
                     <DropdownMenu slot="list">
-                        <!-- <DropdownItem>Hox云平台登入</DropdownItem> -->
+                        <DropdownItem>SaaS云平台登入</DropdownItem>
                         <DropdownItem>400 880 2248</DropdownItem>
                     </DropdownMenu>
                 </Dropdown>

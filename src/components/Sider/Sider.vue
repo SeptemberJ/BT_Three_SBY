@@ -25,6 +25,9 @@
                   <i class="F_24 fa fa-building" aria-hidden="true"></i>
                   <h5>公司</h5>
               </MenuItem>
+              <MenuItem name="Close" class="marginB_20">
+                  <Icon size="22" type="chevron-left"></Icon>
+              </MenuItem>
           </MenuGroup>
       </Menu>
     </div>
@@ -64,8 +67,10 @@
         //this.ToggleSider()
       },
       ChangeSiderMenu2(Menu){
-        this.$store.state.CurSiderMenu = Menu
-        this.$router.push({name:Menu})
+        if(Menu != 'Close'){
+          this.$store.state.CurSiderMenu = Menu
+          this.$router.push({name:Menu})
+        }
         this.ToggleSider()
       },
       ToggleSider (flag) {
