@@ -1,116 +1,7 @@
-/*@import '//fonts.useso.com/css?family=Roboto:300,400,500,700,400italic';
+/*/*/*@import '//fonts.useso.com/css?family=Roboto:300,400,500,700,400italic';
 @import 'http://cdn.bootcss.com/material-design-icons/3.0.1/iconfont/material-icons.css';*/
-@font-face {
-  font-family: "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
-}
-a{
-	text-decoration: none !important;
-}
 html,body{  
-	height: 100% !important;
-	font-family: "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
-}
-p{
-	font-size: 16px !important; 
-	color: #333;
-}
-h1{
-	font-size: 35px !important; 
-	color: #000;
-}
-.TabContent h3{
-	font-size: 24px !important; 
-	color: #000;
-}
-.TabContent h4{
-	font-size: 18px !important; 
-	color: #000;
-}
-.TabContent p{
-	font-size: 16px !important; 
-	color: #333;
-}
-
-.ImgAdditional h5{
-	font-size: 14px;
-}
-
-.ImgTag{
-	font-size: 14px !important; 
-	color: #6a7986 !important; 
-}
-
-
-@media (max-width: 1024px) {
-	h1{
-		font-size: 32px !important;
-	}
-	p{
-		font-size: 14px !important;
-	}
-	.TabContent h3{
-		font-size: 22px !important; 
-		color: #000;
-	}
-	.TabContent h4{
-		font-size: 18px !important; 
-		color: #000;
-	}
-	.TabContent p{
-		font-size: 14px !important; 
-		color: #333;
-	}
-
-	.ImgAdditional h5{
-		font-size: 14px;
-	}
-
-	.ImgTag{
-		font-size: 14px !important; 
-		color: #6a7986 !important; 
-	}
-}
-
-
-@media(max-width:800px){
-	h1{
-		font-size: 25px !important;
-	}
-	p{
-		font-size: 14px !important;
-	}
-	.TabContent h3{
-		font-size: 20px !important; 
-		color: #000;
-	}
-	.TabContent h4{
-		font-size: 18px !important; 
-		color: #000;
-	}
-	.TabContent p{
-		font-size: 14px !important; 
-		color: #333;
-	}
-
-	.ImgAdditional h5{
-		font-size: 14px;
-	}
-
-	.ImgTag{
-		font-size: 14px !important; 
-		color: #6a7986 !important; 
-	}
-
-}
-
-
-
-/*.TabContent p{
-	font-size: 16px !important; 
-	color: #000;
-}*/
-.TabP{
-	font-size: 14px;
+	height: 100% !important;  
 }
 img{
 	display: inline-block !important;  
@@ -239,6 +130,10 @@ img{
 .Padding_20{
 	padding: 20px;
 }
+.PaddingTB_20{
+	padding: 20px auto;
+}
+
 .PaddingLR_20{
 	padding: 0 20px;
 }
@@ -294,4 +189,4 @@ margin-top: 20px;
 }
 .OneBlock{
 	margin: 40px auto;
-}
+}*/*/

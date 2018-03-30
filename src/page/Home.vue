@@ -41,7 +41,7 @@
     </div>
 
     <div class="TextCenter OneBlock">
-      <h2 class="marginTB_20">无论您为什么要缴纳社保，我们帮您搞定</h2>
+      <h1 class="marginTB_20">无论您为什么要缴纳社保，我们帮您搞定</h1>
       <Row type="flex" justify="space-around" class="code-row-bg">
         <Col class="marginT_20" :xs="12" :sm="6" :md="6" :lg="6" v-for="(Reason,Idx) in ReasonInfo">
           <img style="width: 50px;" :src="Reason.img">
@@ -53,7 +53,7 @@
     </div>
 
     <div class="TextCenter OneBlock">
-      <h2 class="marginTB_20">一分钟轻松注册，即可开启社保服务</h2>
+      <h1 class="marginTB_20">一分钟轻松注册，即可开启社保服务</h1>
       <Row type="flex" justify="space-around" class="code-row-bg">
         <Col class="marginT_20" :xs="12" :sm="4" :md="4" :lg="4" v-for="(Process,Idx) in ProcessInfo">
           <img style="width: 50px;" :src="Process.img">

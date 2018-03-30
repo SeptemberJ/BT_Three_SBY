@@ -14,6 +14,22 @@
           </MenuGroup>
       </Menu>
     </div>
+  </div>
+<!--   <div>
+    <div class="desktop">
+      <Menu :theme="theme3" :active-name="CurSiderMenu" @on-select="ChangeSiderMenu">
+          <MenuGroup title="">
+              <MenuItem name="HER云平台" class="marginB_20">
+                  <Icon size="22" type="ios-cloud"></Icon>
+                  <h5>HER云平台</h5>
+              </MenuItem>
+              <MenuItem name="公司" class="marginB_20">
+                  <i class="F_24 fa fa-building" aria-hidden="true"></i>
+                  <h5>公司</h5>
+              </MenuItem>
+          </MenuGroup>
+      </Menu>
+    </div>
     <div class="tablet">
       <Menu :theme="theme3" :active-name="CurSiderMenu" @on-select="ChangeSiderMenu2">
           <MenuGroup title="">
@@ -31,7 +47,7 @@
           </MenuGroup>
       </Menu>
     </div>
-  </div>
+  </div> -->
 </template>
 <script>
 
@@ -89,23 +105,42 @@
   display: none;
 }
 .tablet{
+  width: 100%;
   display: inline-block;
 }
+
 @media (min-width: 769px) {
   .desktop{
     display: inline-block;
   }
   .tablet{
-    display: none !important;
+    width: 100%;
+    display: none;
   }
 
+}
+.ivu-menu-item h5{
+  margin-top: 8px;
 }
 .ivu-menu-item-group-title{
   background-repeat: no-repeat;
   background-position-x: center;
-  background-image: url('http://139.196.232.21/images/logo.png')
+  background-image: url('http://www.btzoon.com/SmartHox/static/img/logo.png');
+  background-size: contain;
+  padding: 0 5px;
 }
 .ivu-menu-light{
-  width: 150px !important;
+  width: 95px !important;
+  background-color: #464547 !important;
+}
+.ivu-menu{
+  color: #fff !important; 
+}
+.ivu-menu-dark{
+  background-color: #464547 !important;
+}
+.ivu-menu-dark.ivu-menu-vertical .ivu-menu-item, .ivu-menu-dark.ivu-menu-vertical .ivu-menu-submenu-title{
+  text-align: left;
+  color: #fff !important;
 }
 </style>
